@@ -1,10 +1,12 @@
-
+import Button from "./Components/Buttons";
+import Header from "./Components/Header";
+import './global.css'
 function App() {
   return (
-    <div>
-      Hello React
-    </div>
-  )
+    <>
+      <Header/>
+    </>
+  );
 }
 
-export default App
+export default App;
