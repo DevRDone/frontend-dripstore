@@ -1,10 +1,12 @@
-import Button from "./Components/Buttons";
-import Header from "./Components/Header";
+import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
+import Header from "./Components/Header/Header";
 import './global.css'
+
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
+      <FeaturedCollection />
     </>
   );
 }
