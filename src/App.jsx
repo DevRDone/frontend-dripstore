@@ -1,5 +1,4 @@
-import Button from "./Components/Buttons";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
 import Footer from "./Components/Footer";
 import './global.css'
