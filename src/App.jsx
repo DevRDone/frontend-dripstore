@@ -1,5 +1,6 @@
-import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
 import Header from "./Components/Header/Header";
+import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
+import Footer from "./Components/Footer";
 import './global.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <FeaturedCollection />
+      <Footer />
     </>
   );
 }
