@@ -29,6 +29,7 @@ function Carrosel() {
         top: 20%;
         left: 3%;
     `
+    
     const H3 = styled.h3`
         color: var(--warning);
         font-weight: 700;
