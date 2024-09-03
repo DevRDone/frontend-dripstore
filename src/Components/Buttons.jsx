@@ -1,12 +1,17 @@
-import { Children } from 'react';
+import { Children, useState } from 'react';
 import styled from 'styled-components';
 
-function Buttons({ text, height, color, width, background }) {
+function Buttons({ text, height, color, width, background, font, border, hoverBG, hoverColor }) {
+    const [hover, setHover] = useState(false);
+
     const styles = {
-        color: color,
+        color: hover ? hoverColor : color,
+        backgroundColor: hover ? hoverBG : background,
         width: width,
         height: height,
-        backgroundColor: background,
+        fontWeight: font,
+        borderRadius: border,
+        transition: '2s',
     }
 
     const StyledButton = styled.button`
@@ -19,12 +24,15 @@ function Buttons({ text, height, color, width, background }) {
         cursor: pointer;
 
         &:hover {
-        opacity: 0.9;
+            transition: all 5s ease,
+            
         }
     `
     return (
         <>
-            <StyledButton style={styles}>
+            <StyledButton style={styles}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}>
                 {text}
             </StyledButton>
         </>

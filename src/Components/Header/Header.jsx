@@ -1,15 +1,16 @@
 import styled from "styled-components";
-import Buttons from "./Buttons";
+
 import Navbar from "./Navbar";
 import { InputSearch } from "./InputSearch";
 import CartControl from "./CartControl";
-import Logoicon from "./Logoicon";
+import Logoicon from "../Logoicon";
+import Buttons from "../Buttons";
 
 function Header() {
     const Header = styled.header`
-        max-width: 100%;
         height: 192px;
         margin: 0 auto;
+        background-color: var(--white);
     `
     const Container = styled.div`
         display: flex;
@@ -28,15 +29,15 @@ function Header() {
         <>
             <Header>
                 <Container>
-                    <Logoicon/>
-                    <InputSearch/>
+                    <Logoicon />
+                    <InputSearch />
                     <Sign>Cadastre-se</Sign>
                     <Buttons
                         text="Entrar"
                     />
-                    <CartControl/>
+                    <CartControl />
                 </Container>
-                <Navbar/>
+                <Navbar />
             </Header>
 
         </>

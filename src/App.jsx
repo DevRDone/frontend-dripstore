@@ -1,11 +1,14 @@
 import Button from "./Components/Buttons";
-import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
+import Footer from "./Components/Footer";
 import './global.css'
+
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
+      <FeaturedCollection />
       <Footer />
     </>
   );
