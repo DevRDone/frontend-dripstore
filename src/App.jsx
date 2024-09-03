@@ -1,15 +1,12 @@
-import Header from "./Components/Header/Header";
-import FeaturedCollection from "./Components/FeaturedCollection/FeaturedCollection";
-import Footer from "./Components/Footer";
 import './global.css'
+import { BrowserRouter as Router } from "react-router-dom"
+import AppRoutes from "./Routes/AppRoutes";
 
 function App() {
   return (
-    <>
-      <Header />
-      <FeaturedCollection />
-      <Footer />
-    </>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 
