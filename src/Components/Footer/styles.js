@@ -11,6 +11,11 @@ export const Footer = styled.footer`
     padding: 3rem;
     padding-bottom: 0;
   }
+
+  @media screen and (min-width: 992px) {
+    padding: 4rem;
+    padding-bottom: 0;
+  }
 `;
 
 export const ContainerWrapper = styled.div`

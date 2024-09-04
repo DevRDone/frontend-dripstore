@@ -63,7 +63,8 @@ function Carrosel() {
                 slidesPerView={slidePerView}
                 pagination={{ clickable: true }}
                 style={{
-                    height: '681px'
+                    height: '681px',
+                    backgroundColor: 'var(--white2)',
                 }}
             >
                 {data.map((item) => (
