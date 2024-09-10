@@ -9,7 +9,7 @@ function HomePage() {
         <Layout>
             <Carousel />
             <FeaturedCollection/>
-            <TrendingProducts />
+            <TrendingProducts quantity={8} />
         </Layout>            
     )
 }

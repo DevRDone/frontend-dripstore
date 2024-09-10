@@ -2,7 +2,7 @@ import ArrowRight from "../../assets/icons/ArrowRight";
 import ProductCardList from "./ProductCardList";
 import { Section, SectionHeader } from "./styles";
 
-const TrendingProducts = () => {
+const TrendingProducts = ({ quantity } ) => {
   return (
     <Section>
       <SectionHeader>
@@ -13,7 +13,7 @@ const TrendingProducts = () => {
         </a>
       </SectionHeader>
       <div>
-        <ProductCardList />
+        <ProductCardList quantity={quantity} />
       </div>
     </Section>
   );
