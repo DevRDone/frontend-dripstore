@@ -10,9 +10,10 @@ function HomePage() {
         <Layout>
             <Carousel />
             <FeaturedCollection/>
+            <TrendingProducts quantity={8} />
             <CollectionCategory />
-            <TrendingProducts />
-        </Layout>            
+            <TrendingProducts quantity={8} />
+        </Layout>
     )
 }
 export default HomePage;
