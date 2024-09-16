@@ -7,43 +7,38 @@ import card3 from "../../assets/collection3.png";
 function FeaturedCollection() {
 
     const Container = styled.div`
-
-
-        @media (max-width: 768px) {
-            padding: 0 1rem;
-        }
+        // ?
     `
     const H2 = styled.h2`
         font-weight: 700;
-        line-height: 1rem;
-        font-size: 1.5rem;
         margin: 2rem 0 ;
-        padding: 0 4rem;
+        padding: 0 1rem;
 
-        @media (max-width: 768px) {
-            padding: 0 2rem;
+        @media (min-width: 768px) {
+            padding: 0 3rem;
         }
-        @media (max-width: 425px) {
-            padding: 0 0rem;
+
+        @media (min-width: 1024px) {
+            padding: 0 4rem;
         }
     `
     const ContainerFlex = styled.div`
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr; 
         gap: 1rem;
         justify-content: space-between;
-        padding: 0 4rem;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        justify-content: center;
         
-        // Mobile M e L
-        @media (min-width: 768px) and (max-width: 1024px) {
-            justify-content: center;
-            grid-template-columns: 1fr 1fr; 
-            padding: 2rem;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 3rem;
         }
-        @media (max-width: 425px) {
-            grid-template-columns: 1fr;
-            padding: 2rem;
-            justify-content: center;
+
+        @media (min-width: 1024px) {
+            padding: 0 4rem;
+            grid-template-columns: repeat(3, 1fr);
         }
     `
 

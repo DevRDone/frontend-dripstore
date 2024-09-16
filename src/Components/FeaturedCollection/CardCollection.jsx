@@ -15,18 +15,6 @@ function CardCollection(props) {
         justify-content: center;
         padding-left: 2rem;
         border-radius: 0.6rem;
-
-        // Media Queries
-
-        @media (max-width: 425px) {
-            width: 24.37rem;
-            padding-left: 1rem;
-        }
-
-        @media (max-width: 375px) {
-            width: 21.12rem;
-            padding-left: 1rem;
-        }
     `
     const H2 = styled.h2`
         color: var(--dark-gray);
