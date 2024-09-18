@@ -2,9 +2,10 @@ import styled from "styled-components";
 import Buttons from "../Buttons";
 
 function CardCollection(props) {
+
     const StyledCollection = styled.div`
-        width: 405px;
-        height: 251px;
+        width: 100%;
+        height: 15.68rem;
         background-image: url(${props => props.src});
         background-position: center;
         background-size: cover;
@@ -19,7 +20,7 @@ function CardCollection(props) {
         color: var(--dark-gray);
         font-weight: 700;
         font-size: 2.25em;
-        width: 52%;
+        width: 11.5rem;
     `
     return (
         <StyledCollection src={props.src} >
