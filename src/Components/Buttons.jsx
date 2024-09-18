@@ -1,7 +1,7 @@
 import { Children, useState } from 'react';
 import styled from 'styled-components';
 
-function Buttons({ text, height, color, width, background, font, border, hoverBG, hoverColor }) {
+function Buttons({ text, height, color, width, background, font, border, hoverBG, hoverColor, display }) {
     const [hover, setHover] = useState(false);
 
     const styles = {
@@ -12,6 +12,7 @@ function Buttons({ text, height, color, width, background, font, border, hoverBG
         fontWeight: font,
         borderRadius: border,
         transition: '2s',
+        display: display,
     }
 
     const StyledButton = styled.button`
