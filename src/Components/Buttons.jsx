@@ -25,7 +25,10 @@ function Buttons({ text, height, color, width, background, font, border, hoverBG
 
         &:hover {
             transition: all 5s ease,
-            
+        }
+
+        @media (min-width: 360px) and (max-width: 768px){
+            width: auto;
         }
     `
     return (

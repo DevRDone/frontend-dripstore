@@ -5,21 +5,41 @@ import card2 from "../../assets/collection2.png";
 import card3 from "../../assets/collection3.png";
 
 function FeaturedCollection() {
+
     const Container = styled.div`
-        padding: 0 2rem;
-        margin: 0 auto;
+        // ?
     `
     const H2 = styled.h2`
         font-weight: 700;
-        line-height: 38px;
-        font-size: 24px;
-        margin: 1rem 0;
+        margin: 2rem 0 ;
+        padding: 0 1rem;
+
+        @media (min-width: 768px) {
+            padding: 0 3rem;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 0 4rem;
+        }
     `
     const ContainerFlex = styled.div`
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr; 
         gap: 1rem;
         justify-content: space-between;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        justify-content: center;
+        
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 3rem;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 0 4rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
     `
 
     return (
@@ -34,7 +54,7 @@ function FeaturedCollection() {
                     src={card2}
                     text="Coleção Adidas"
                 />
-                <CardCollection
+                <CardCollection 
                     src={card3}
                     text="Novo Beats Bass"
                 />
