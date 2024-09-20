@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function IconMobileClick() {
     const StyledSVG = styled.svg`
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             display: none;
         }
     `

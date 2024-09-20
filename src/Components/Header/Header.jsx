@@ -18,10 +18,9 @@ function Header() {
         margin: 0 auto;
         background-color: var(--white);
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
             height: fit-content;
         }
-
     `
     const Container = styled.div`
         display: flex;
@@ -29,8 +28,11 @@ function Header() {
         justify-content: space-between;
         padding: 1rem 4rem;
         align-items: center;
-        @media screen and (max-width: 768px) {
+        @media (min-width: 0px) and (max-width: 1023px) {
             display: none;
+        }
+        @media (min-width: 1024px) {
+            padding: 1rem 4rem;
         }
     `
     const Sign = styled.p`
@@ -43,7 +45,7 @@ function Header() {
         display: flex;
         flex-direction: column;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             display: none;
         }
     `
@@ -51,21 +53,37 @@ function Header() {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 0.5rem;
+        padding: 1rem 1rem;
+
+        svg:nth-child(2) {
+            width: 40%;
+            margin-left: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            padding: 1rem 3rem;
+        }
+        @media (min-width: 1024px) {
+            padding: 1rem 4rem;
+        }
     `
     const ContainerInputMobile = styled.div`
-        margin: 0 auto;
+        padding: 0 1rem;
         padding-bottom: 1rem;
         display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            position: relative;
+            left: 22%;
+        }
     `
     const StyledButton = styled.button`
         background-color: transparent;
         border: none;
         outline: none;
-
-        @media (min-width: 768px) {
-            display: none;
-        }
+        position: absolute;
+        right: 18%;
+        transform: scale(1);
     `
     const [isOpen, setIsOpen] = useState(false);
 
@@ -96,7 +114,7 @@ function Header() {
                         <Logoicon />
                         <StyledButton onClick={toggleInput}>
                             <IconMobileClick />
-                        </StyledButton>
+                        </StyledButton> 
                         <CartControl />
                     </ContainerItems>
 
@@ -109,4 +127,5 @@ function Header() {
         </>
     )
 }
+
 export default Header;

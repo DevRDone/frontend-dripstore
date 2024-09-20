@@ -1,14 +1,12 @@
-import { TfiAlignJustify } from "react-icons/tfi";
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Buttons from "../Buttons";
 
-
 const isActive = (url) => {
-    if (location.pathname === url) {
-        return "active";
-    }
-    return "";
+  if (location.pathname === url) {
+    return "active";
+  }
+  return "";
 }
 
 const MenuContainer = styled.div`
@@ -24,7 +22,7 @@ const MenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
 
-  @media screen and (min-width: 769px){
+  @media screen and (min-width: 1023px){
     display: none;
   }
 
@@ -33,7 +31,7 @@ const Paragraph = styled.p`
     font-weight: 700;
     position: absolute;
     top: 6%;
-    left: 10%;
+    left: 5%;
 `
 const NavLinks = styled.nav`
   width: 308px;
@@ -53,7 +51,6 @@ const NavLinks = styled.nav`
     color: black;
     text-decoration: none;
     font-size: 1rem;
-    display: flex;
   }
 
   a.active {
@@ -61,7 +58,6 @@ const NavLinks = styled.nav`
     font-weight: bold;
     border-bottom: 3px solid var(--primary);
     padding-bottom: 1px;
-    width: 70%;
   }
   a:nth-child(5) {
     color: var(--dark-gray);
@@ -76,9 +72,12 @@ const NavLinks = styled.nav`
     gap: 0.9rem;
     position: absolute;
     top: 12%;
-    left: 10%;
+    left: 5%;
   }
 
+  ul > li {
+    list-style-type: none;
+  }
 
   hr {
     width: 80%;
@@ -93,39 +92,45 @@ const NavLinks = styled.nav`
   }
 `;
 
-
-
 const MobileMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return (
-        <MenuContainer>
-            <MenuButton onClick={toggleMenu}>
-                {isOpen ? '✖' : '☰'}
-            </MenuButton>
-            <NavLinks isOpen={isOpen}>
-                <Paragraph>
-                    Páginas
-                </Paragraph>
-                <ul>
-                    <a href="/" className={isActive('/')}>Home</a>
-                    <a href="/products" className={isActive('/products')}>Produtos</a>
-                    <a href="#" className={isActive('')}>Categorias</a>
-                    <a href="#" className={isActive('')}>Meus pedidos</a>
-                </ul>
-                <hr />
-                <Buttons
-                    text='Entrar'
-                    width={248}
-                />
-                <a href="#">Cadastre-se</a>
-            </NavLinks>
-        </MenuContainer>
-    );
+  return (
+    <MenuContainer>
+      <MenuButton onClick={toggleMenu}>
+        {isOpen ? '✖' : '☰'}
+      </MenuButton>
+      <NavLinks isOpen={isOpen}>
+        <Paragraph>
+          Páginas
+        </Paragraph>
+        <ul>
+          <li>
+            <a href="/" className={isActive('/')}>Home</a>
+          </li>
+          <li>
+            <a href="/product" className={isActive('/product')}>Produtos</a>
+          </li>
+          <li>
+            <a href="#" className={isActive('')}>Categorias</a>
+          </li>
+          <li>
+            <a href="#" className={isActive('')}>Meus pedidos</a>
+          </li>
+        </ul>
+        <hr />
+        <Buttons
+          text='Entrar'
+          width={248}
+        />
+        <a href="#">Cadastre-se</a>
+      </NavLinks>
+    </MenuContainer>
+  );
 };
 
 export default MobileMenu;

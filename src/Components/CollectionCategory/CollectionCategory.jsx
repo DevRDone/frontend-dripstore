@@ -22,29 +22,44 @@ function CollectionCategory() {
         flex-direction: column;
         align-items: center;
         padding: 4rem 0rem;
+        overflow-y: auto;
+        
         h2 {
             font-weight: 700;
             padding: 2rem 0;
             font-size: 24px;
         }
 
-        @media screen and (max-width: 768px) {
-            overflow-y: auto;
+        @media (min-width: 360px) {
+            padding: 2rem 0rem;
+            align-items: start;
+            h2 {
+                padding: 2rem 1rem;
+            }
+        }
+        @media (min-width: 480px) {
             padding: 2rem 0;
             align-items: start;
             h2 {
                 padding: 2rem 1rem;
             }
         }
+        @media (min-width: 768px) {
+            padding: 2rem 0;
+            align-items: start;
+            overflow-y: none;
+            h2 {
+                padding: 2rem 3rem;
+                margin: 0 auto;
+            }
+        }
     `;
 
     const ItemWrapper = styled.div`
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     `;
-
     const ItemImagem = styled.button`
         border: none;
         outline: none;
@@ -55,26 +70,31 @@ function CollectionCategory() {
         cursor: pointer;
         background-color: var(--white);
     `;
-
     const ItemName = styled.h3`
         font-weight: 500;
         padding-top: 1rem;
         display: flex;
     `;
-
     const ContainerWrapper = styled.div`
         display: flex;
         gap: 2.5rem;
-        justify-content: start;
-        @media screen and (max-width: 768px) {
-            gap: 2rem;
+        justify-content: space;
+
+        @media (max-width: 480px) {
+            gap: 1rem;
             width: 100%;
             padding: 0 1rem;
         }
-        
+        @media (min-width: 768px) {
+            gap: 2rem;
+            width: 100%;
+            padding: 0 3rem;
+        }
+        @media (min-width: 1024px) {
+            gap: 2rem;
+            justify-content: center;
+        }
     `;
-
-
     const applyColor = (isSelected) => isSelected ? 'var(--primary)' : 'var(--light-gray)';
 
     return (

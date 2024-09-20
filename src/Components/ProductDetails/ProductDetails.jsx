@@ -17,8 +17,14 @@ function ProductDetails(props) {
             padding-bottom: 2rem;
         }
 
-        @media screen and (max-width: 768px){
+        @media (min-width: 0) and (max-width: 480px){
             padding: 1rem 1rem;
+        }
+        @media (min-width: 768px){
+            padding: 1rem 3rem;
+        }
+        @media (min-width: 1024px){
+            padding: 1rem 4rem;
         }
 
     `
@@ -28,7 +34,7 @@ function ProductDetails(props) {
         width: 100%;
         height: 100%;
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 1122px){
             flex-direction: column;
         }
     `
