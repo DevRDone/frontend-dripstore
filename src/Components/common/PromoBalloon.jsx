@@ -8,4 +8,4 @@ const PromoBalloon = ({ promoPercent }) => {
   )
 }
 
-export default PromoBalloon
+export default PromoBalloon;

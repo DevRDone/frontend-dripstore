@@ -81,21 +81,18 @@ function Carrosel() {
         @media (min-width: 559px) and (max-width: 767px) {
             width: 80%;
             bottom: 20%;
-            left: 10%;
         }
         @media (min-width: 768px) {
             width: 70%;
             bottom: 20%;
-            left: 15%;
         }
         @media (min-width: 1024px) {
             width: 70%;
-            left: 32%;
+            left: 15%;
             bottom: 4%;
         }
         @media (min-width: 1440px) {
             width: 100%;
-            left: 16%;
             bottom: 7%;
         }
     `
@@ -115,7 +112,7 @@ function Carrosel() {
                 }}
             >
                 {data.map((item) => (
-                    <SwiperSlide key={item.id}>
+                    <SwiperSlide className="a" key={item.id}>
                         <Container>
                             <H3>Melhores ofertas personalizadas</H3>
                             <TitleMain>Queima de Estoque Nike 🔥</TitleMain>

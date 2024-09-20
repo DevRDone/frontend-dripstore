@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 function Logoicon() {
     const StyledSVG = styled.svg`
-        @media screen and (max-width: 768px) {
-            transform: scale(0.6);
-        }
+        
     `
     return (
         <StyledSVG width="253" height="44" viewBox="0 0 253 44" fill="none" xmlns="http://www.w3.org/2000/svg">

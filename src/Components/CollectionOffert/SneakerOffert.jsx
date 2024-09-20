@@ -13,6 +13,7 @@ function SneakerOffert() {
             left: 14%;
             z-index: 1;
         }
+
         @media (min-width: 480px) {
             div {
                 padding: 11.5rem;
