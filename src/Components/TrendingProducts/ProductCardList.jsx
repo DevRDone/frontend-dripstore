@@ -60,12 +60,12 @@ const productList = [
   },
 ];
 
-const ProductCardList = ({ quantity }) => {
+const ProductCardList = ({ className, quantity }) => {
   
   const productsToShow = productList.slice(0, quantity);
 
   return (
-    <ContainerWrapper>
+    <ContainerWrapper className={className}>
       {productsToShow.map((product, _index) => (
         <ProductCard product={product} key={_index} />
       ))}

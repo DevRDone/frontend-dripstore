@@ -14,15 +14,15 @@ function AppRoutes() {
                 element={<HomePage />}
             />
             <Route
-                path="/product"
+                path="/products"
                 element={<ProductPage />}
             />
             <Route
-                path="/product/details"
-                element={<ProductDetailsPage/>}
+                path="/products/details"
+                element={<ProductDetailsPage />}
             />
             <Route
-                path="/category"
+                path="/categories"
                 element={<CategoryPage />}
             />
             <Route

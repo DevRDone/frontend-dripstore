@@ -1,50 +1,34 @@
 import styled from "styled-components"
 import { SearchIcon } from "./SearchIcon"
 
-export function InputSearch() {
     const ContainerInput = styled.div`
-        position: relative;
-        svg {
-            position: absolute;
-            top: 30%;
-            right: 3%;
-            @media (max-width: 1023px) {
-                position: relative;
-                transform: scale(1) translateX(-140%) translateY(30%);
-            }
+        min-width: 100px;
+        width: 100%;
+        max-width: 559px;
+        height: var(--header-height);
+        border-radius: 8px;
+        background-color: var(--light-gray-3);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        overflow: hidden;
+
+        @media screen and (min-width: 1024px) {
+            width: 40%;
         }
     `
 
     const Input = styled.input`
-        width: 39vw; 
-        max-width: 559px;
-        height: 20vw;
-        max-height: 60px;
-        border-radius: 8px;
-        background-color: var(--light-gray-3);
-        text-indent: 16px;
+        width: 100%;
+        height: 100%;
         border: none;
         outline: none;
-
-        @media (max-width: 479px) {
-            width: 19rem;
-            height: 60px;
-        }
-        @media (min-width: 480px) {
-            width: 25.4rem;
-            height: 60px;
-        }
-        @media (min-width: 768px) and (max-width: 1023px) {
-            width: 30rem;
-        }
-        @media (min-width: 1024px) {
-            width: 20rem;
-        }
-        @media (min-width: 1440px) {
-            width: 39rem;
-        }
+        background-color: transparent;
     `
 
+export function InputSearch() {
     return (
         <ContainerInput>
             <Input placeholder="Pesquisar produto..." />

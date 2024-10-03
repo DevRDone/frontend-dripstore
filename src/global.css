@@ -27,8 +27,25 @@
     --white2: #f5f5f5;
 
     --bg-color: #f9f8fe;
+
+    --header-height: 3.8rem;
 }
 
 body {
     background-color: var(--bg-color);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 10px;
 }
