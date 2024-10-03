@@ -5,6 +5,7 @@ import ProductPage from "../pages/ProductPage";
 import CategoryPage from "../pages/CategoryPage";
 import PageNotFound from "../pages/PageNotFound";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
+import CartPage from "../pages/CartPage";
 
 function AppRoutes() {
     return (
