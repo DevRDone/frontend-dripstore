@@ -1,5 +1,5 @@
 import ResumePayment from './ResumePayment.jsx';
-import { ContainerInfos,  } from './style.js'
+import { ContainerInfos, } from './style.js'
 
 const InfosPayment = () => {
   return (

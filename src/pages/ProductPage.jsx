@@ -13,7 +13,7 @@ import FilterIcon from "../assets/icons/filter-icon.svg?react";
 import useIsSmallScreen from "../hooks/useIsSmallScreen";
 
 function ProductPage() {
-  const [isOffcanvasOpen, setOffcanvasOpen] = useState(false); 
+  const [isOffcanvasOpen, setOffcanvasOpen] = useState(false);
   const isSmallScreen = useIsSmallScreen();
 
   const handleOffcanvasToggle = () => {

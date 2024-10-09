@@ -5,7 +5,7 @@ const PromoBalloon = ({ promoPercent }) => {
     <StyledPromoBalloon>
         <span>{promoPercent}% OFF</span>
     </StyledPromoBalloon>
-  )
-}
+  );
+};
 
 export default PromoBalloon;

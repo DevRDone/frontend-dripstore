@@ -14,11 +14,11 @@ const H2 = styled.h2`
 
   @media (min-width: 768px) {
     padding: 0 3rem;
-  }
+  };
 
   @media (min-width: 1024px) {
     padding: 0 4rem;
-  }
+  };
 `;
 const ContainerFlex = styled.div`
   display: grid;
@@ -32,11 +32,11 @@ const ContainerFlex = styled.div`
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 3rem;
-  }
+  };
   @media (min-width: 1024px) {
     padding: 0 4rem;
     grid-template-columns: repeat(3, 1fr);
-  }
+  };
 `;
 
 function FeaturedCollection() {
@@ -50,6 +50,6 @@ function FeaturedCollection() {
       </ContainerFlex>
     </Container>
   );
-}
+};
 
 export default FeaturedCollection;

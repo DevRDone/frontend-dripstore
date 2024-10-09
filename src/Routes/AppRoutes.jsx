@@ -5,41 +5,42 @@ import ProductPage from "../pages/ProductPage";
 import CategoryPage from "../pages/CategoryPage";
 import PageNotFound from "../pages/PageNotFound";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
-
+import PageCheckout from "../pages/PageCheckout";
+import PaymentSucessPage from "../pages/PaymentSucessPage";
 
 function AppRoutes() {
-    return (
-        <Routes>
-            <Route
-                path="/"
-                element={<HomePage />}
-            />
-            <Route
-                path="/products"
-                element={<ProductPage />}
-            />
-            <Route
-                path="/products/details"
-                element={<ProductDetailsPage />}
-            />
-            <Route
-                path="/categories"
-                element={<CategoryPage />}
-            />
-            <Route
-                path="/checkout"
-                element={<PageCheckout />}
-            />
-            <Route
-                path="*"
-                element={<PageNotFound />}
-            />
-            <Route
-                path="/payment"
-                element={<PaymentSucessPage />}
-            />
-        </Routes>
-    )
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={<HomePage />}
+      />
+      <Route
+        path="/products"
+        element={<ProductPage />}
+      />
+      <Route
+        path="/products/details"
+        element={<ProductDetailsPage />}
+      />
+      <Route
+        path="/categories"
+        element={<CategoryPage />}
+      />
+      <Route
+        path="/checkout"
+        element={<PageCheckout />}
+      />
+      <Route
+        path="*"
+        element={<PageNotFound />}
+      />
+      <Route
+        path="/payment"
+        element={<PaymentSucessPage />}
+      />
+    </Routes>
+  )
 }
 
 export default AppRoutes;

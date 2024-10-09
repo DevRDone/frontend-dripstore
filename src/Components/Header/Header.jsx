@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { ShowProductCart, } from "./styles";
-
 import Navbar from "./Navbar";
 import { InputSearch } from "./InputSearch";
 import CartControl from "./CartControl";
@@ -189,6 +187,6 @@ function Header() {
       </StyledHeader>
     </>
   );
-}
+};
 
 export default Header;

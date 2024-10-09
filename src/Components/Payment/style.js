@@ -37,8 +37,7 @@ export const ContainerSucess = styled.div`
     font-weight: 700;
     text-align: center;
   }
-`
-
+`;
 export const ContainerInfos = styled.div`
   background-color: var(--white);
   padding: 0.5rem 2rem;
@@ -68,9 +67,8 @@ export const ContainerInfos = styled.div`
     color: black;
     font-weight: 600;
   }
-`
+`;
 //    =>  ResumePayment <=
-
 export const ContainerResume = styled.div`
   display: flex;
   flex-direction: column;
@@ -101,5 +99,4 @@ export const ContainerResume = styled.div`
     text-align: center;
     padding-bottom: 1rem;
   }
-  `
-
+`;

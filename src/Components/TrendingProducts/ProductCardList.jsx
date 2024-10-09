@@ -61,7 +61,6 @@ const productList = [
 ];
 
 const ProductCardList = ({ className, quantity }) => {
-  
   const productsToShow = productList.slice(0, quantity);
 
   return (

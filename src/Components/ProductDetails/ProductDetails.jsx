@@ -167,6 +167,6 @@ function ProductDetails(props) {
       </ContainerFlex>
     </Container>
   );
-}
+};
 
 export default ProductDetails;

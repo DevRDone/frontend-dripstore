@@ -1,27 +1,27 @@
 import { Container, Title } from "./styles";
 
 const categoryLinks = [
-    {
-      title: "Camisetas",
-      url: "#",
-    },
-    {
-      title: "Calças",
-      url: "#",
-    },
-    {
-      title: "Bonés",
-      url: "#",
-    },
-    {
-      title: "Headphones",
-      url: "#",
-    },
-    {
-      title: "Tênis",
-      url: "#",
-    },
-  ];
+  {
+    title: "Camisetas",
+    url: "#",
+  },
+  {
+    title: "Calças",
+    url: "#",
+  },
+  {
+    title: "Bonés",
+    url: "#",
+  },
+  {
+    title: "Headphones",
+    url: "#",
+  },
+  {
+    title: "Tênis",
+    url: "#",
+  },
+];
 
 const Categories = () => {
   return (

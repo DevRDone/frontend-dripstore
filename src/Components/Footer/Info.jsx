@@ -1,32 +1,32 @@
 import { Container, Title } from "./styles";
 
 const infoLinks = [
-    {
-      title: "Sobre Drip Store",
-      url: "#",
-    },
-    {
-      title: "Segurança",
-      url: "#",
-    },
-    {
-      title: "Wishlist",
-      url: "#",
-    },
-    {
-      title: "Blog",
-      url: "#",
-    },
-    {
-      title: "Trabalhe conosco",
-      url: "#",
-    },
-    {
-      title: "Meus pedidos",
-      url: "#",
-    },
-  ];
-  
+  {
+    title: "Sobre Drip Store",
+    url: "#",
+  },
+  {
+    title: "Segurança",
+    url: "#",
+  },
+  {
+    title: "Wishlist",
+    url: "#",
+  },
+  {
+    title: "Blog",
+    url: "#",
+  },
+  {
+    title: "Trabalhe conosco",
+    url: "#",
+  },
+  {
+    title: "Meus pedidos",
+    url: "#",
+  },
+];
+
 const Info = () => {
   return (
     <>
