@@ -96,7 +96,7 @@ const ContainerWrapper = styled.div`
 function CollectionCategory() {
   const [selectedId, setSelectedId] = useState("1");
 
-  const applyColor = (isSelected) => isSelected ? 'var(--primary)' : 'var(--light-gray)';
+  const applyColor = ($isSelected) => $isSelected ? 'var(--primary)' : 'var(--light-gray)';
 
   return (
     <Container>
@@ -107,7 +107,7 @@ function CollectionCategory() {
           return (
             <ItemWrapper key={item.id}>
               <ItemImagem
-                isSelected={isSelected}
+                $isSelected={isSelected}
                 onClick={() => setSelectedId(item.id)}
               >
                 <item.image color={applyColor(isSelected)} />

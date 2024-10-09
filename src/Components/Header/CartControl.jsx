@@ -49,7 +49,7 @@ const DropDown = styled.div`
   right: 4%;
   z-index: 999;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
-  display: ${(props) => (props.isVisible ? 'flex' : 'none')};
+  display: ${(props) => (props.$isVisible ? 'flex' : 'none')};
 
   @media (min-width: 1024px) {
     top: 10%;
@@ -136,7 +136,7 @@ function CartControl() {
     <Container>
       <CartCount>{value?.length}</CartCount>
       <CartIcon onClick={toggleDropDown} />
-      <DropDown isVisible={isDropVisible}>
+      <DropDown $isVisible={isDropVisible}>
         <h3 >Meu Carrinho</h3>
         <hr />
         {/* Conteudo com Array*/}
