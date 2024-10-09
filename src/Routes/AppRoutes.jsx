@@ -5,7 +5,7 @@ import ProductPage from "../pages/ProductPage";
 import CategoryPage from "../pages/CategoryPage";
 import PageNotFound from "../pages/PageNotFound";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
-import PageCheckout from "../pages/PageCheckout";
+
 
 function AppRoutes() {
     return (
@@ -33,6 +33,10 @@ function AppRoutes() {
             <Route
                 path="*"
                 element={<PageNotFound />}
+            />
+            <Route
+                path="/payment"
+                element={<PaymentSucessPage />}
             />
         </Routes>
     )
