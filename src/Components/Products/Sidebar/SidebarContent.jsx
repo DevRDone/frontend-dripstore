@@ -35,7 +35,7 @@ const SidebarContent = () => {
             <ul>
               {item.options.map((option) => (
                 <li key={option}>
-                  <input id={option} type={item.inputType} />
+                  <input id={option} type={item.inputType} name='radio'/>
                   <label htmlFor={option}>{option}</label>
                 </li>
               ))}

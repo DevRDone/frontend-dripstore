@@ -22,30 +22,32 @@ function ProductPage() {
 
   return (
     <Layout>
+      <SectionHeader>
+        <div className="filter-container">
+          {/* sort by */}
+          <OrderBy />
+          {/* mobile filter toggle */}
+          {isSmallScreen && (
+            <FilterToggle onClick={handleOffcanvasToggle}>
+              <FilterIcon />
+            </FilterToggle>
+          )}
+        </div>
+        <p className="text-container">
+          <strong>Produtos </strong>- 484 produtos
+        </p>
+      </SectionHeader>
       <PageContainer>
         {/* sidebar */}
         <Sidebar
           isOffcanvasOpen={isOffcanvasOpen}
           onOffcanvasToggle={handleOffcanvasToggle}
         />
+
         {/* content */}
         <Section>
           {/* content header */}
-          <SectionHeader>
-            <div className="filter-container">
-              {/* sort by */}
-              <OrderBy />
-              {/* mobile filter toggle */}
-              {isSmallScreen && (
-                <FilterToggle onClick={handleOffcanvasToggle}>
-                  <FilterIcon />
-                </FilterToggle>
-              )}
-            </div>
-            <p className="text-container">
-              <strong>Produtos </strong>- 484 produtos
-            </p>
-          </SectionHeader>
+
           {/* content content */}
           <ProductList />
         </Section>

@@ -67,10 +67,10 @@ const DropDown = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    span {
-      color: var(--primary);
-      font-weight: 700;
-    }
+  span {
+    color: var(--primary);
+    font-weight: 700;
+  }
   };
 
   .FlexBtnDrop {
@@ -78,13 +78,13 @@ const DropDown = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    .Btn-Drop {
-      background-color: transparent;
-      outline: none;
-      cursor: pointer;
-      border: none;
-      text-decoration: underline;
-    }
+  .Btn-Drop {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+  }
   };
   // Styled do Conteudo do Array
 
@@ -92,34 +92,34 @@ const DropDown = styled.div`
     display: flex;
     gap: 1rem;
 
-    img {
-      background-color: #E2E3FF;
-      width: 4.43rem;
-      height: 3.62rem;
-      padding: 0.5rem;
-      border-radius: 4px;
-    }
+  img {
+    background-color: #E2E3FF;
+    width: 4.43rem;
+    height: 3.62rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
 
-    strong {
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
-    span {
-      text-decoration: line-through;
-      color: var(--light-gray-2);
-      font-size: 0.9rem;
-    }
+  strong {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  span {
+    text-decoration: line-through;
+    color: var(--light-gray-2);
+    font-size: 0.9rem;
+  }
 
-    .FlexDropInfo {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+  .FlexDropInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-      div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
     }
   }
 `;

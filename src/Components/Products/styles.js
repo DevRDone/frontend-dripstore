@@ -34,6 +34,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 `;
 
 export const SectionHeader = styled.div`
@@ -42,6 +43,7 @@ export const SectionHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+  padding: 2rem 4rem;
 
   & .text-container {
     display: flex;

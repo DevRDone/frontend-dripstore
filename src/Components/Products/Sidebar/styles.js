@@ -10,6 +10,7 @@ export const SidebarContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.02);
 
   h1 {
     font-size: 16px;

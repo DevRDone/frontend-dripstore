@@ -9,7 +9,7 @@ const ProductListStyled = styled(ProductCardList)`
 
 const ProductList = () => {
   return (
-    <ProductListStyled quantity={5} />
+    <ProductListStyled quantity={8} />
   )
 }
 
