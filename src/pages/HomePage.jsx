@@ -1,7 +1,7 @@
 import Carousel from "../Components/Carrosel/Carrosel";
 import CollectionCategory from "../Components/CollectionCategory/CollectionCategory";
-import CollectionOffert from "../Components/CollectionOffert/CollectionOffert";
-import FeaturedCollection from "../Components/FeaturedCollection/FeaturedCollection";
+import CollectionOffert from "../Components/CollectionOffert";
+import FeaturedCollection from "../Components/FeaturedCollection";
 import TrendingProducts from "../Components/TrendingProducts";
 import Layout from "./Layout";
 

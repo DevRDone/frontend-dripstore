@@ -1,28 +1,7 @@
-import styled from "styled-components";
+import { StyledCollection, H2Card } from './style.js'
 import Buttons from "../Buttons";
 
-const StyledCollection = styled.div`
-  width: 100%;
-  height: 15.68rem;
-  background-image: url(${props => props.src});
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  padding-left: 2rem;
-  border-radius: 0.6rem;
-`;
-const H2 = styled.h2`
-  color: var(--dark-gray);
-  font-weight: 700;
-  font-size: 2.25em;
-  width: 11.5rem;
-`;
-
-function CardCollection(props) {
-
+const CardCollection = (props) => {
   return (
     <StyledCollection src={props.src} >
       <Buttons
@@ -34,7 +13,7 @@ function CardCollection(props) {
         font="700"
         border="20rem"
       />
-      <H2>{props.text}</H2>
+      <H2Card>{props.text}</H2Card>
       <Buttons
         text='Comprar'
         color='var(--primary)'
