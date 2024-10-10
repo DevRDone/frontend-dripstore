@@ -43,7 +43,7 @@ export const SectionHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
 
   & .text-container {
     display: flex;
@@ -77,6 +77,12 @@ export const SectionHeader = styled.div`
     gap: 0.5rem;
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
   @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
 

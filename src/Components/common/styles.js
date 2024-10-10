@@ -22,7 +22,7 @@ export const StyledOffcanvas = styled.div`
   left: 0;
   height: calc(100vh - var(--header-height, 4rem));
   width: 100%;
-  background-color: white;
+  background-color: var(--white);
   z-index: 900;
   overflow: hidden;
 
