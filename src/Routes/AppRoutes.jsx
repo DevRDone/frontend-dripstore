@@ -20,7 +20,7 @@ function AppRoutes() {
         element={<ProductPage />}
       />
       <Route
-        path="/products/details"
+        path="/details"
         element={<ProductDetailsPage />}
       />
       <Route

@@ -45,17 +45,15 @@ const DropDown = styled.div`
   gap: 1rem;
   flex-direction: column;
   width: 21.5rem;
-  top: 5.4%;
-  right: 4%;
+  top: 3rem;
+  right: 1rem;
   z-index: 999;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
   display: ${(props) => (props.$isVisible ? 'flex' : 'none')};
 
-  @media (min-width: 1024px) {
-    top: 10%;
-  }
-  @media screen and (min-width: 1440px) {
-    top: 10%;
+  @media screen and (min-width: 1024px) {
+    top: 6rem;
+    right: 4rem;
   }
   
   h3 {

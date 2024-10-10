@@ -1,12 +1,7 @@
 import { useState } from "react";
 import Sidebar from "../Components/Products/Sidebar";
 import Layout from "./Layout";
-import {
-  FilterToggle,
-  PageContainer,
-  Section,
-  SectionHeader,
-} from "../Components/Products/styles";
+import { FilterToggle, PageContainer, Section, SectionHeader } from "../Components/Products/styles";
 import OrderBy from "../Components/Products/OrderBy";
 import ProductList from "../Components/Products/ProductList";
 import FilterIcon from "../assets/icons/filter-icon.svg?react";
