@@ -1,5 +1,5 @@
 import { ContainerInforCollection } from './style.js'
-import Buttons from "../Buttons";
+import Buttons from "../UI/Buttons";
 
 function InfoCollectionOffert() {
   return (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import UseLocalStorage from "../../hooks/UseLocalStorage";
 import { CartIcon } from "./CartIcon";
-import Buttons from "../Buttons";
+import Buttons from "../UI/Buttons";
 import Sneaker from "../../assets/products/sneaker-white.svg";
 import { useState } from "react";
 

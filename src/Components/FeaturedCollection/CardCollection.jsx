@@ -1,5 +1,6 @@
 import { StyledCollection, H2Card } from './style.js'
-import Buttons from "../Buttons";
+import Buttons from "../UI/Buttons";
+
 
 const CardCollection = (props) => {
   return (

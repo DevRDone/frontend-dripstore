@@ -73,30 +73,10 @@ export const ContainerResume = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  .ContainerTotal {
-    background-color: #F6AA1C0D;
-    padding: 2rem;
-
-    li {
-      font-weight: 700;
-      color: black;
-      display: flex;
-      justify-content: space-between;
-    }
-    strong {
-      color: black;
-      font-weight: 700;
-    }
-
-    p {
-      text-align: end;
-      font-size: 0.9rem;
-    }
-
-  }
+  
   a {
     color: black;
     text-align: center;
     padding-bottom: 1rem;
-  }
+  } 
 `;

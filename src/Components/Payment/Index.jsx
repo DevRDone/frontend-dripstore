@@ -1,4 +1,4 @@
-import Buttons from '../Buttons.jsx';
+import Buttons from "../UI/Buttons";
 import InfosPayment from './InfosPayment.jsx';
 import { ContainerIndex, } from './style.js'
 import Sucess from './Sucess.jsx';

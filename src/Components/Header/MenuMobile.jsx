@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Buttons from "../Buttons";
-
+import Buttons from "../UI/Buttons";
 import NavLinks from "./NavLinks";
 
 const Paragraph = styled.p`

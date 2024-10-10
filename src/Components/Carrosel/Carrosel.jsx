@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import sneaker from '../../assets/sneaker.svg';
 import effect from '../../assets/effect.svg';
-import Buttons from "../Buttons";
+import Buttons from "../UI/Buttons";
 register();
 
 const data = [

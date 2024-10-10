@@ -1,5 +1,5 @@
 import { Footer, ContainerWrapper, LogoContainer, InfoCatContainer, Copy, ContentContainer } from "./styles";
-import Logoicon from "../Logoicon";
+import Logoicon from "../UI/Logoicon";
 import SocialLinks from "./SocialLinks";
 import Info from "./Info";
 import Categories from "./Categories";

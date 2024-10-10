@@ -4,7 +4,7 @@ import Stars from "./Star";
 import { FaStar } from "react-icons/fa";
 import ShoeSizeButtons from "./ShoeSizeButtons";
 import ColorsShoes from "./ColorsShoes";
-import Buttons from "../Buttons";
+import Buttons from "../UI/Buttons";
 
 const Container = styled.div`
   width: 100%;

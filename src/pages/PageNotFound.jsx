@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Buttons from "../Components/Buttons";
+import Buttons from "../Components/UI/Buttons";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
