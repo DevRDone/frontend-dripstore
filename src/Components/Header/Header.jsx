@@ -91,14 +91,13 @@ const ContainerItems = styled.div`
   .icons-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
   }
 `;
 
 const MenuButton = styled.button`
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   height: 100%;
 
@@ -127,6 +126,7 @@ const AuthLinks = styled.div`
 const StyledButton = styled.button`
   border: none;
   outline: none;
+  background-color: transparent;
 `;
 
 function Header() {

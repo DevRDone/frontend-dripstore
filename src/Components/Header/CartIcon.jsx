@@ -8,6 +8,5 @@ export function CartIcon(props) {
       <path d="M2.74988 3.25L4.82988 3.61L5.79288 15.083C5.87088 16.018 6.65188 16.736 7.58988 16.736H18.5019C19.3979 16.736 20.1579 16.078 20.2869 15.19L21.2359 8.632C21.3529 7.823 20.7259 7.099 19.9089 7.099H5.16388" stroke="#C92071" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M14.1254 10.795H16.8984" stroke="#C92071" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-
   )
 };
